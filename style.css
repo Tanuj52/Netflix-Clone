@@ -1,0 +1,250 @@
+@import url("https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-color: black;
+}
+.main {
+  background-image: url("assets/images/bg.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: max(1600px, 100vw);
+  height: 70vh;
+  position: relative;
+}
+.main .box {
+  height: 70vh;
+  width: 100%;
+  opacity: 0.6;
+  background-color: black;
+  position: absolute;
+  top: 0;
+}
+nav {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 60vw;
+  margin: auto;
+}
+nav img {
+  width: 130px;
+  position: relative;
+  z-index: 10;
+}
+nav button {
+  position: relative;
+  z-index: 10;
+}
+.price {
+  font-family: "Martel Sans", sans-serif;
+  height: calc(100% - 100px);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  gap: 16px;
+  padding: 0px 0px;
+}
+.price > span {
+  font-family: "Martel Sans", sans-serif;
+}
+.price > :first-child {
+  font-weight: 900;
+  font-size: 38px;
+}
+.price > :nth-child(2) {
+  font-weight: 400;
+  font-size: 24px;
+}
+.price > :nth-child(3) {
+  font-weight: 400;
+  font-size: 20px;
+}
+.separation {
+  height: 0.9vh;
+  background-color: rgba(62, 62, 62, 0.415);
+  position: relative;
+  z-index: 20;
+}
+.btn {
+  padding: 5px 10px;
+  font-weight: 300;
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid rgba(255, 255, 255, 0.643);
+  color: white;
+  border-radius: 4px;
+}
+.btn-red {
+  background-color: rgb(200, 0, 0);
+  color: white;
+  padding: 3px 20px;
+  font-size: 17px;
+  font-weight: 500;
+  border: none;
+}
+.btn-red-sm {
+  background-color: rgb(200, 0, 0);
+  color: white;
+  border: none;
+  font-weight: 400;
+}
+.price-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.main input {
+  padding: 9px 55px 9px 16px;
+  font-weight: 600;
+  font-size: 12px;
+  color: rgb(210, 0, 0);
+  border-radius: 4px;
+  border: 1px solid rgba(254, 254, 254, 0.581);
+  background-color: rgba(20, 20, 20, 0.8);
+}
+
+.sec1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  max-width: 70vw;
+  margin: auto;
+  position: relative;
+}
+
+.secimg {
+  position: relative;
+}
+.secimg img {
+  max-width: 555px;
+  position: relative;
+  z-index: 10;
+}
+
+.secimg video {
+  position: absolute;
+  top: 53px;
+  left: 0px;
+  max-width: 555px;
+}
+.seccontent {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0px;
+}
+.seccontent :nth-child(1) {
+  font-size: 48px;
+  font-weight: 800;
+}
+.seccontent :nth-child(2) {
+  font-size: 24px;
+}
+
+.faq {
+  padding: 30px;
+  text-align: center;
+  color: rgb(236, 235, 235);
+}
+.faq h2 {
+  font-size: 48px;
+  padding: 30px;
+}
+.faqbox:hover {
+  transition: all 1s ease-out;
+  background-color: #606060;
+}
+.faqbox {
+  font-size: 24px;
+  color: white;
+  display: flex;
+  max-width: 60vw;
+  justify-content: space-between;
+  margin: 12px auto;
+  background-color: rgb(47, 47, 47);
+  padding: 25px;
+}
+
+footer {
+  color: white;
+  max-width: 60vw;
+  margin: auto;
+  padding: 60px;
+}
+footer .question {
+  padding: 34px 0;
+}
+.footer {
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 30px;
+  color: white;
+}
+.footer-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+.footer-item a {
+  color: white;
+  font-size: 15px;
+}
+a :hover {
+  color: red;
+}
+@media screen and (max-width: 1250px) {
+  nav {
+    max-width: 90vw;
+  }
+  .sec1 {
+    flex-wrap: wrap;
+  }
+  .footer {
+    grid-template-columns: 1fr 1fr;
+    gap: 45px;
+  }
+  .price > :first-child {
+    font-size: 32px;
+  }
+  .price > :nth-child(2) {
+    font-size: 18px;
+  }
+  .price > :nth-child(3) {
+    font-size: 18px;
+  }
+  .price-buttons {
+    flex-direction: column;
+  }
+  .faq h2 {
+    font-size: 32px;
+  }
+  footer{
+    max-width: 90vw; ;
+  }
+}
+@media screen and (max-width: 550px) {
+  .secimg img {
+    max-width: 350px;
+  }
+  .secimg video {
+    max-width: 340px;
+  }
+  .main {
+    height: 78vh;
+  }
+  .main .box {
+    height: 78vh;
+  }
+}
